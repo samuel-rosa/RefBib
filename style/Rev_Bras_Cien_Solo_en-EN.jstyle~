@@ -1,16 +1,16 @@
 ########################################################################################
-# Arquivo de estilo para o pligin JABREF-oo (versão 1.0).
+# Style file for JABREF-oo plugin (version 1.0).
 ########################################################################################
 
 NAME
-Revista Brasileira de Ciência do Solo
+Brazilian Journal of Soil Science
 
 JOURNALS
-Congresso Brasileiro de Ciência do Solo
-Revista Brasileira de Ciência do Solo
+XXXIV Brazilian Congress of Soil Science
+Brazilian Journal of Soil Science
 
 PROPERTIES
-Title="REFERÊNCIAS"
+Title="REFERENCES"
 IsSortByPosition="false"
 IsNumberEntries="false"
 ReferenceParagraphFormat="References"
@@ -54,7 +54,7 @@ conference=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer,
 
 default=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-electronic=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. Disponível em <\url>. Acessado em \month de \year\uniq.\begin{howpublished} (\howpublished)\end{howpublished}
+electronic=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. Available in <\url>. Accessed in \month, \year\uniq.\begin{howpublished} (\howpublished)\end{howpublished}
 
 inbook=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. In: \begin{editor}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}). \end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
