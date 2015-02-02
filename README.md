@@ -1,13 +1,19 @@
 RefBib
 ======
 
+**Formatação automática de referências bibliográficas**
+
+Visite a pasta [style](style) para acessar os arquivos de estivo.
+
+# Apresentação
+
 A construção do conhecimento cientítico passa, obrigatóriamente, pela publicaçãoacadêmica. Toda nova publicação acadêmica precisa ser contextualizada perante o corpo de conhecimentos já existente, o qual costuma estar formalizado também na forma de publicações acadêmicas. São as nossas referências bibliográficas!
 
 Depois de algum tempo de atividade, todo pesquisador constrói um banco de referências bibliográficas (RefBib) com algumas centenas de items. E como é fácil perder-se em meio a esse amontoado de RefBib! Não bastasse isso, a etapa mais enfadonha da elaboração de qualquer publicação acadêmica é a formatação da lista de RefBib. Cada periódico, instituição e evento científico com suas próprias normas, algumas vezes absurdas. A situação é ainda pior no caso de dissertações e teses, onde o número de itens pode chegar facilmente a algumas centenas.
 
-A organização eficiente de um banco de RefBib e a otimização da sua formatação em publicações acadêmicas exige o uso de um gerenciador de [RefBib](pt.wikipedia.org/wiki/Gerenciador_de_refer%C3%AAncias_bibliogr%C3%A1ficas). Um gerenciador de RefBib consiste em um software de manipulação de um banco de dados onde são armazenadas informações básicas sobre as RefBib. Os gerenciadores podem ser integrados a processadores de texto, como o [LibreOffice Writer](http://pt-br.libreoffice.org/) e o [Microsoft Office Word](http://office.microsoft.com/pt-br/), permitindo a adequada formatação das citações e da lista de RefBib automaticamente. 
+A organização eficiente de um banco de RefBib e a otimização da sua formatação em publicações acadêmicas exige o uso de um gerenciador de [RefBib](pt.wikipedia.org/wiki/Gerenciador_de_refer%C3%AAncias_bibliogr%C3%A1ficas). Um gerenciador de RefBib consiste em um software de manipulação de um banco de dados onde são armazenadas informações básicas sobre as RefBib. Os gerenciadores podem ser integrados a processadores de texto como o [LibreOffice Writer](http://pt-br.libreoffice.org/), permitindo a adequada formatação das citações e da lista de RefBib automaticamente. 
 
-Existem [vários](http://en.wikipedia.org/wiki/Comparison_of_reference_management_software) softwares de gerenciamento de RefBib, cada um melhor adaptação a diferentes situações e exigências do usuário, o que torna difícil a escolha do gerenciador a ser utilizado. A minha escolha atual é o JabRef.
+Existem [vários](http://en.wikipedia.org/wiki/Comparison_of_reference_management_software) softwares de gerenciamento de RefBib, cada um melhor adaptação a diferentes situações e exigências do usuário, o que torna difícil a escolha do gerenciador a ser utilizado. A minha escolha atual é o JabRef!
 
 # JabRef
 
@@ -43,20 +49,20 @@ A maioria dos bancos de dados de referências bibliográficas na Internet permit
   }
 ```
 
-Se você não quiser iniciar seu banco de RefBib do zero, [clique aqui](database.bib) para descarregar um arquivo `*.bib` contendo uma centena de RefBib na área de pedometria e mapeamento digital do solo.
+Se você não quiser iniciar seu banco de RefBib do zero, [clique aqui](https://docs.google.com/file/d/0B7xsLbrOA23oQlFJQXdIbDRyd0k/edit?usp=sharing) para descarregar um arquivo `*.bib` contendo uma centena de RefBib na área de pedometria e mapeamento digital do solo.
 
 # Arquivo de estilo
 
-A utilização do JabRef para a inserção de citações e formatação da lista de RefBib em um documento de texto do LibreOffice Writer depende de duas ferramentas. Primeiro, do plugin que faz a conexão do JabRef com o LibreOffice Writer. Para descarregar o plugin basta acessar a página do projeto [clicando aqui](http://jabref.sourceforge.net/OOPlugin-jabref.php). O plugin para conexão do JabRef com o Microsoft Office Word pode ser descarregado [clicando aqui](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html).
+A utilização do JabRef para a inserção de citações e formatação da lista de RefBib em um documento de texto depende do uso de duas ferramentas. Primeiro, o plugin que faz a conexão do JabRef com o editor de texto. No caso do LibreOffice Writer, minha escolha de editor de texto, o plugin pode ser descarregado [clicando aqui](http://jabref.sourceforge.net/OOPlugin-jabref.php). O plugin para conexão do JabRef com o Microsoft Office Word pode ser descarregado [clicando aqui](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html).
 
-A segunda ferramenta é o arquivo de estilo `*.jstyle`. Um arquivo de estilo contém as informações necessárias para a formatação das RefBib que são exportadas para o arquivo de texto no LibreOffice Writer (Note que o arquivo de estilo para documentos do Microsoft Office Word possui formato diferente daquele usado para o LibreOffice Writer. [Clique aqui](https://docs.google.com/file/d/0B7xsLbrOA23oMndPR0lSdXl2Y0k/edit?usp=sharing) para descarregar o modelo do resumo do Congresso Brasileiro de Ciência do Solo no formato do LibreOffice Writer). O JabRef possui uma série de arquivos de estilo em seu [banco de dados](https://docs.google.com/file/d/0B7xsLbrOA23oMndPR0lSdXl2Y0k/edit?usp=sharing). Mas como cada periódico, instituição e evento científico possuem normas próprias de formação das RefBib, pode-se customizar os arquivos de estilo. O quadro abaixo mostra parte do arquivo de estilo elaborado para exportação e formatação das RefBib conforme as normas da Revista Brasileira de Ciência do Solo ([RBCS](http://www.sbcs.org.br/revista/a-revista/)).
+A segunda ferramenta é o arquivo de estilo `*.jstyle`. Um arquivo de estilo contém as informações necessárias para a formatação das RefBib que são exportadas para o arquivo de texto no LibreOffice Writer (Note que o arquivo de estilo para documentos do Microsoft Office Word possui formato diferente daquele usado para o LibreOffice Writer). O JabRef possui uma série de arquivos de estilo em seu [banco de dados](http://jabref.sourceforge.net/OOPlugin-styles.php). Mas como cada periódico, instituição e evento científico possuem normas próprias de formação das RefBib, pode-se customizar os arquivos de estilo. O quadro abaixo mostra como exemplo parte do arquivo de estilo elaborado para exportação e formatação das RefBib conforme as normas da Revista Brasileira de Ciência do Solo ([RBCS](http://www.sbcs.org.br/revista/a-revista/)).
 
 ```
 NAME
 Revista Brasileira de Ciência do Solo
 
 JOURNALS
-XXXIV Congresso Brasileiro de Ciência do Solo
+Congresso Brasileiro de Ciência do Solo
 Revista Brasileira de Ciência do Solo
 
 PROPERTIES
@@ -102,11 +108,15 @@ article=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer,
 
 O arquivo de estilo possui cinco campos: `NAME`, `JOURNALS`, `PROPERTIES`, `CITATION` e `LAYOUT`. O campo `NAME` define o nome do arquivo de estilo, e o campo `JOURNALS` identifica a quais eventos científicos e periódicos o arquivo de estilo se aplica. Essas informações são mostradas na interface do JabRef quando é solicitada a visualização da lista de arquivos de estilo disponíveis. O campo `PROPERTIES` possui informações gerais sobre a formatação das RefBib como, por exemplo, o título (Title) exportado para o documento de texto. Em seguida, o campo `CITATION` define a formatação das citações no texto. Por fim, o campo `LAYOUT` define a formatação da lista de RefBib.
 
-Um arquivo de estilo (`*.jstyle`), contendo as regras de formatação das citações e da lista de RefBib conforme as normas da Revista Brasileira de Ciência do Solo, pode ser descarregado [clicando aqui](https://docs.google.com/file/d/0B7xsLbrOA23oLWs3Wm1ERnNzUk0/edit?usp=sharing), para a versão em português, ou [clicando aqui](https://docs.google.com/file/d/0B7xsLbrOA23oZk5lVU5SUlRVMXM/edit?usp=sharing) para a versão em inglês.
+Diversos arquivos de estilo (`*.jstyle`) estão disponíveis neste repositório:
+
+* Revista Brasileira de Ciência do Solos (português) [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_pt-BR.jstyle)]
+* Revista Brasileira de Ciência do Solos (inglês) [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_en-EN.jstyle)]
+* European Journal of Soil Science [[link]()]
 
 # Abreviação do nome de periódicos
 
-Outra importante funcionalidade do JabRef é o comando JournalAbbreviator, através do qual os nomes dos periódicos são abreviados de modo automático. Para isso é necessário um arquivo onde estejam definidos os nomes dos periódicos e as respectivas abreviações. O quadro abaixo mostra parte do arquivo contendo informações para a abreviação automática do nome de periódicos científicos que elaboramos para exportação e formatação das RefBib conforme as normas da Revista Brasileira de Ciência do Solo adotadas pela Comissão Organizadora do XXXIV Congresso Brasileiro de Ciência do Solo.
+Outra importante funcionalidade do JabRef é a abreviação automática dos nomes dos periódicos. Para isso é necessário um arquivo onde estejam definidos os nomes dos periódicos e as respectivas abreviações. O quadro abaixo mostra como exemplo parte do arquivo que pode ser descarregado [clicando aqui](https://docs.google.com/file/d/0B7xsLbrOA23obFBhWGkzWVlkb1k/edit?usp=sharing).
 
 ```
 Aaas Selected Symposia Series = Aaas Select
@@ -124,5 +134,3 @@ Aascu Issues = Aascu Iss
 Aatcc Review = Aatcc Rev
 Aatcc Symposium = Aatcc Symp
 ```
-
-Um arquivo o nome e abreviação do nome de centenas de periódicos científicos de todo o mundo, conforme a Web of Science, pode ser descarregado [clicando aqui](https://docs.google.com/file/d/0B7xsLbrOA23obFBhWGkzWVlkb1k/edit?usp=sharing).
