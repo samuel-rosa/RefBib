@@ -43,7 +43,7 @@ A maioria dos bancos de dados de referências bibliográficas na Internet permit
   }
 ```
 
-Se você não quiser iniciar seu banco de RefBib do zero, clique aqui para descarregar um arquivo `*.bib` contendo uma centena de RefBib na área de pedometria e mapeamento digital do solo.
+Se você não quiser iniciar seu banco de RefBib do zero, [clique aqui](database.bib) para descarregar um arquivo `*.bib` contendo uma centena de RefBib na área de pedometria e mapeamento digital do solo.
 
 # Arquivo de estilo
 
