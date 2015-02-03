@@ -3,11 +3,15 @@ RefBib
 
 **Formatação automática de referências bibliográficas**
 
-Visite a pasta [style](style) para acessar os arquivos de estivo.
+Visite a pasta [style](style) para acessar os arquivos de estivo, ou selecione o arquivo desejado na lista abaixo:
+
+* Revista Brasileira de Ciência do Solos [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_pt-BR.jstyle)]
+* Brazilian Journal of Soil Science [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_en-EN.jstyle)]
+* European Journal of Soil Science [[link]()]
 
 # Apresentação
 
-A construção do conhecimento cientítico passa, obrigatóriamente, pela publicaçãoacadêmica. Toda nova publicação acadêmica precisa ser contextualizada perante o corpo de conhecimentos já existente, o qual costuma estar formalizado também na forma de publicações acadêmicas. São as nossas referências bibliográficas!
+A construção do conhecimento científico passa, obrigatoriamente, pela publicação acadêmica. Toda nova publicação acadêmica precisa ser contextualizada perante o corpo de conhecimentos já existente, o qual costuma estar formalizado também na forma de publicações acadêmicas. São as nossas referências bibliográficas!
 
 Depois de algum tempo de atividade, todo pesquisador constrói um banco de referências bibliográficas (RefBib) com algumas centenas de items. E como é fácil perder-se em meio a esse amontoado de RefBib! Não bastasse isso, a etapa mais enfadonha da elaboração de qualquer publicação acadêmica é a formatação da lista de RefBib. Cada periódico, instituição e evento científico com suas próprias normas, algumas vezes absurdas. A situação é ainda pior no caso de dissertações e teses, onde o número de itens pode chegar facilmente a algumas centenas.
 
@@ -19,15 +23,15 @@ Existem [vários](http://en.wikipedia.org/wiki/Comparison_of_reference_managemen
 
 Eu considero o JabRef um dos melhores gerenciadores de RefBib devido à sua simplicidade e eficiência, mas sobretudo por fazer parte da família dos softwares livres e de código aberto (Free and Open Source Software – FOSS).
 
-O JabRef foi lançado em 29 de novembro de 2003 sob a licença GPL (General Public Licence). Escrito na linguagem de programação Java, está disponível em várias línguas, entre elas o português. Possui suporte para a maioria dos sistemas operacionais (Windows, Linux, Mac OS X, BSD, Unix) e integração com a maioria dos editores de texto (Microsoft Office Word, LibreOffice Writer, OpenOffice Writer, LyX, Kile, Emacs, Vim e WinEdt). Está entre aqueles com maior capacidade de importação e exportação arquivos de diferentes formatos. Ainda oferece a possibilidade de edição, pesquisa e visualização das referências, pesquisa em bancos de dados na internet (PubMed, IEEEXplore, CiteSeer, JSTOR, BibSonomy), links para fontes externas (URL, DOI, PDF, PS), customização de filtros de exportação (arquivos de estilo), abreviação do nome de periódicos e muito mais.
+O JabRef foi lançado em 29 de novembro de 2003 sob a licença GPL (General Public Licence). Escrito na linguagem de programação Java, está disponível em várias línguas, entre elas o português. Possui suporte para a maioria dos sistemas operacionais e integração com a maioria dos editores de texto. Está entre aqueles com maior capacidade de importação e exportação arquivos de diferentes formatos. Ainda oferece a possibilidade de edição, pesquisa e visualização das referências, pesquisa em bancos de dados na internet, links para fontes externas, customização de filtros de exportação, abreviação do nome de periódicos e muito mais.
 
-Se essas informações já foram suficientes para convencê-lo a usar o JabRef, então acesse a página do projeto no [SourceForge](http://sourceforge.net/projects/jabref/files/jabref/) e instale a última versão mais estável para seu sistema operacional.
+A última versão do JabRef pode ser obtida na página do projeto no [SourceForge](http://sourceforge.net/projects/jabref/files/jabref/).
 
 # BibTeX
 
 Outra grande vantagem do JabRef é que o mesmo utiliza o formato [BibTeX](http://pt.wikipedia.org/wiki/Bibtex) como formato nativo para gerenciamento das RefBib. Assim, a entrada de RefBib no banco de dados do JabRef pode ser realizada usando a interface gráfica ou arquivos BibTeX (arquivo no formato `*.bib`).
 
-A maioria dos bancos de dados de referências bibliográficas na Internet permite exportar arquivos BibTeX, como o [Google Scholar](scholar.google.com.br) e [ScienceDirect](http://www.sciencedirect.com/). Assim, não é necessário entrar manualmente todas as informações de uma RefBib. Basta descarregar o arquivo BibTeX. O quadro abaixo mostra como exemplo o conteúdo do arquivo BibTeX de um artigo publicado na Revista Brasileira de Ciência do Solo.
+A maioria dos bancos de dados de referências bibliográficas na Internet permite exportar arquivos BibTeX, como o [Google Scholar](scholar.google.com.br) e [ScienceDirect](http://www.sciencedirect.com/). Assim, não é necessário entrar manualmente todas as informações de uma RefBib. Basta descarregar o arquivo BibTeX. O quadro abaixo mostra o conteúdo do arquivo BibTeX de um artigo publicado na Revista Brasileira de Ciência do Solo.
 
 ```
 @ARTICLE{PedronEtAl2012,
@@ -53,9 +57,9 @@ Se você não quiser iniciar seu banco de RefBib do zero, [clique aqui](https://
 
 # Arquivo de estilo
 
-A utilização do JabRef para a inserção de citações e formatação da lista de RefBib em um documento de texto depende do uso de duas ferramentas. Primeiro, o plugin que faz a conexão do JabRef com o editor de texto. No caso do LibreOffice Writer, minha escolha de editor de texto, o plugin pode ser descarregado [clicando aqui](http://jabref.sourceforge.net/OOPlugin-jabref.php). O plugin para conexão do JabRef com o Microsoft Office Word pode ser descarregado [clicando aqui](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html).
+A utilização do JabRef para a inserção de citações e formatação da lista de RefBib em um documento de texto depende do uso de duas ferramentas. Primeiro, o plugin que faz a conexão do JabRef com o editor de texto. No caso do LibreOffice Writer, minha escolha de editor de texto, o plugin pode ser descarregado [clicando aqui](http://jabref.sourceforge.net/OOPlugin-jabref.php).
 
-A segunda ferramenta é o arquivo de estilo `*.jstyle`. Um arquivo de estilo contém as informações necessárias para a formatação das RefBib que são exportadas para o arquivo de texto no LibreOffice Writer (Note que o arquivo de estilo para documentos do Microsoft Office Word possui formato diferente daquele usado para o LibreOffice Writer). O JabRef possui uma série de arquivos de estilo em seu [banco de dados](http://jabref.sourceforge.net/OOPlugin-styles.php). Mas como cada periódico, instituição e evento científico possuem normas próprias de formação das RefBib, pode-se customizar os arquivos de estilo. O quadro abaixo mostra como exemplo parte do arquivo de estilo elaborado para exportação e formatação das RefBib conforme as normas da Revista Brasileira de Ciência do Solo ([RBCS](http://www.sbcs.org.br/revista/a-revista/)).
+A segunda ferramenta é o arquivo de estilo `*.jstyle`. Um arquivo de estilo contém as informações necessárias para a formatação das RefBib que são exportadas para o arquivo de texto no LibreOffice Writer. O JabRef possui uma série de arquivos de estilo em seu [banco de dados](http://jabref.sourceforge.net/OOPlugin-styles.php). Mas como cada periódico, instituição e evento científico possuem normas próprias de formação das RefBib, pode-se customizar os arquivos de estilo. O quadro abaixo mostra como exemplo parte do arquivo de estilo elaborado para exportação e formatação das RefBib conforme as normas da Revista Brasileira de Ciência do Solo - [RBCS](http://www.sbcs.org.br/revista/a-revista/), as quais são usadas no Congresso Brasileiro de Ciência do Solo.
 
 ```
 NAME
@@ -108,15 +112,17 @@ article=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer,
 
 O arquivo de estilo possui cinco campos: `NAME`, `JOURNALS`, `PROPERTIES`, `CITATION` e `LAYOUT`. O campo `NAME` define o nome do arquivo de estilo, e o campo `JOURNALS` identifica a quais eventos científicos e periódicos o arquivo de estilo se aplica. Essas informações são mostradas na interface do JabRef quando é solicitada a visualização da lista de arquivos de estilo disponíveis. O campo `PROPERTIES` possui informações gerais sobre a formatação das RefBib como, por exemplo, o título (Title) exportado para o documento de texto. Em seguida, o campo `CITATION` define a formatação das citações no texto. Por fim, o campo `LAYOUT` define a formatação da lista de RefBib.
 
-Diversos arquivos de estilo (`*.jstyle`) estão disponíveis neste repositório:
+A publicação de trabalhos acadêmicos em diferentes revistas e eventos exigiu, durante os poucos anos de atividade científica que desenvolvi, elaborar alguns arquivos de estilo (`*.jstyle`). Estes arquivos de estilo estão disponíveis gratuitamente neste repositório. Veja a lista abaixo:
 
-* Revista Brasileira de Ciência do Solos (português) [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_pt-BR.jstyle)]
-* Revista Brasileira de Ciência do Solos (inglês) [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_en-EN.jstyle)]
+* Revista Brasileira de Ciência do Solos [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_pt-BR.jstyle)]
+* Brazilian Journal of Soil Science [[link](https://raw.githubusercontent.com/samuel-rosa/RefBib/master/style/Rev_Bras_Cien_Solo_en-EN.jstyle)]
 * European Journal of Soil Science [[link]()]
+
+Nota: O plugin para conexão do JabRef com o Microsoft Office Word pode ser descarregado [clicando aqui](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html). Note que o arquivo de estilo para documentos do Microsoft Office Word possui formato diferente daquele usado para o LibreOffice Writer.
 
 # Abreviação do nome de periódicos
 
-Outra importante funcionalidade do JabRef é a abreviação automática dos nomes dos periódicos. Para isso é necessário um arquivo onde estejam definidos os nomes dos periódicos e as respectivas abreviações. O quadro abaixo mostra como exemplo parte do arquivo que pode ser descarregado [clicando aqui](https://docs.google.com/file/d/0B7xsLbrOA23obFBhWGkzWVlkb1k/edit?usp=sharing).
+Outra importante funcionalidade do JabRef é a abreviação automática dos nomes dos periódicos. Para isso é necessário um arquivo onde estejam definidos os nomes dos periódicos e as respectivas abreviações. O quadro abaixo mostra parte do arquivo que pode ser descarregado [clicando aqui](https://docs.google.com/file/d/0B7xsLbrOA23obFBhWGkzWVlkb1k/edit?usp=sharing).
 
 ```
 Aaas Selected Symposia Series = Aaas Select
