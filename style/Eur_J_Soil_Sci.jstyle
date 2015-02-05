@@ -1,0 +1,81 @@
+########################################################################################
+# Style file for JABREF-oo plugin (version 1.0).
+# Alessandro Samuel-Rosa
+# 28 January 2015
+# E-mail: alessandrosamuel@yahoo.com.br
+# Homepage: http://soil-scientist.net/
+# Licence Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+########################################################################################
+
+NAME
+European Journal of Soil Science
+
+JOURNALS
+European Journal of Soil Science
+
+PROPERTIES
+Title="References"
+IsSortByPosition="false"
+IsNumberEntries="false"
+ReferenceParagraphFormat="RefBib EJSS"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+AuthorField="author/editor"
+YearField="year"
+MaxAuthors="2"
+MaxAuthorsFirst="2"
+AuthorSeparator=", "
+AuthorLastSeparator=" & "
+AuthorLastSeparatorInText=" & "
+EtAlString=" et al."
+CitationSeparator="; "
+MultiCiteChronological="true"
+BracketBefore="("
+BracketAfter=")"
+BracketBeforeInList="["
+BracketAfterInList="]"
+MinimumGroupingCount="3"
+CitationCharacterFormat="Text body"
+GroupedNumbersSeparator="-"
+UniquefierSeparator=", "
+InTextYearSeparator=" "
+YearSeparator=", "
+FormatCitations="false"
+ItalicCitations="false"
+BoldCitations="false"
+SuperscriptCitations="false"
+SubscriptCitations="false"
+
+LAYOUT
+article=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \title. <i>\journal</i>, <b>\volume</b>, \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}.
+
+book=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition edn.\end{edition}\begin{publisher} \publisher\end{publisher}, \begin{address}\address\end{address}.
+
+techreport=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition edn.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.
+
+collection=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author}  \year\uniq. <i>\title</i>.\begin{edition} \edition edn.\end{edition}\begin{publisher} \publisher,\end{publisher}, \begin{address} \address\end{address}.
+
+conference=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \title. In:\begin{booktitle} <i>\booktitle</i>,\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address}\begin{year} \year\end{year}. Anais.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
+
+default=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{publisher} \publisher,\end{publisher}, \begin{address} \address\end{address}.
+
+electronic=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} <i>\title</i>. Available in <\url>. Accessed in \month, \year\uniq.\begin{howpublished} (\howpublished)\end{howpublished}
+
+inbook=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \title. In: \begin{booktitle}<i>\booktitle</i>\end{booktitle} (\begin{editor}\format[IfPlural(eds,ed)]{\editor} \format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\editor}\end{editor}), \begin{pages}pp. \format[FormatPagesForHTML]{\pages}\end{pages}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}
+
+incollection=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \title. In: \begin{booktitle}<i>\booktitle</i>\end{booktitle} (\begin{editor}\format[IfPlural(eds,ed)]{\editor} \format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\editor}\end{editor}), \begin{pages}pp. \format[FormatPagesForHTML]{\pages}\end{pages}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}
+
+inproceedings=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \title. In: \begin{booktitle}<i>\booktitle</i>\end{booktitle} (\begin{editor}\format[IfPlural(eds,ed)]{\editor} \format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\editor}\end{editor}), \begin{pages}pp. \format[FormatPagesForHTML]{\pages}\end{pages}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}
+
+manual=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.
+
+mastersthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Master Thesis)
+
+monograph=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Monograph)
+
+phdthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Doctorate Thesis)
+
+
+
+unpublished=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
