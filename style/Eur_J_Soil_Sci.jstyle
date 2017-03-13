@@ -17,8 +17,8 @@ PROPERTIES
 Title="References"
 IsSortByPosition="false"
 IsNumberEntries="false"
-ReferenceParagraphFormat="RefBib EJSS"
-ReferenceHeaderParagraphFormat="Heading 1"
+ReferenceParagraphFormat="Reference list"
+ReferenceHeaderParagraphFormat="Reference heading"
 
 CITATION
 AuthorField="author/editor"
