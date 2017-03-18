@@ -48,7 +48,7 @@ SubscriptCitations="false"
 LAYOUT
 article=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \title. <i>\journal</i>, <b>\volume</b>, \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}.
 
-book=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition edn.\end{edition}\begin{publisher} \publisher\end{publisher}, \begin{address}\address\end{address}.
+book=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>. \begin{publisher} \publisher\end{publisher}, \begin{address}\address\end{address}.
 
 techreport=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition edn.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.
 
