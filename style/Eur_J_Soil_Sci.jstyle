@@ -1,10 +1,7 @@
 ########################################################################################
-# Style file for JABREF-oo plugin (version 1.0).
+# Style file for JABREF-oo plugin -- provided 'as-is'
 # Alessandro Samuel-Rosa
-# 28 January 2015
-# E-mail: alessandrosamuel@yahoo.com.br
-# Homepage: http://soil-scientist.net/
-# Licence Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+# This file is licensed under the terms of the GPL version 2
 ########################################################################################
 
 NAME
@@ -29,6 +26,7 @@ AuthorSeparator=", "
 AuthorLastSeparator=" & "
 AuthorLastSeparatorInText=" & "
 EtAlString=" et al."
+ItalicEtAl="true"
 CitationSeparator="; "
 MultiCiteChronological="true"
 BracketBefore="("
@@ -75,7 +73,5 @@ mastersthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSp
 monograph=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Monograph)
 
 phdthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Doctorate Thesis)
-
-
 
 unpublished=\begin{author}\format[Authors(LastFirst, sep=, ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
