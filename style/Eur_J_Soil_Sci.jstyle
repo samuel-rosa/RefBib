@@ -68,10 +68,12 @@ inproceedings=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer
 
 manual=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.
 
-mastersthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Master Thesis)
+mastersthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>. M.Sc. thesis,\begin{school} \school,\end{school}\begin{address} \address\end{address}.
+
+\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Master Thesis)
 
 monograph=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Monograph)
 
-phdthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{address} \address,\end{address}\begin{school} \school,\end{school}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Doctorate Thesis)
+phdthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>. Ph.D. thesis,\begin{school} \school,\end{school}\begin{address} \address\end{address}.
 
 unpublished=\begin{author}\format[Authors(6, 6, LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <i>\title</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
