@@ -22,8 +22,8 @@ YearField="year"
 MaxAuthors="2"
 MaxAuthorsFirst="2"
 AuthorSeparator=", "
-AuthorLastSeparator=" & "
-AuthorLastSeparatorInText=" & "
+AuthorLastSeparator=" and "
+AuthorLastSeparatorInText=" and "
 EtAlString=" et al."
 CitationSeparator="; "
 MultiCiteChronological="true"
@@ -44,32 +44,32 @@ SuperscriptCitations="false"
 SubscriptCitations="false"
 
 LAYOUT
-article=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. \format[JournalAbbreviator]{\journal}, \volume:\begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}, \year\uniq.
+article=\begin{author}\format[Authors(LastFirst,NoPunc,InitialsNospace,Comma,Comma), RemoveBrackets]{\author}.\end{author} \title. \format[JournalAbbreviator]{\journal} \year\uniq;\volume:\begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{doi} doi:\doi\end{doi}
 
-book=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+book=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma), RemoveBrackets, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}.\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address:\end{address}\begin{publisher} \publisher;\end{publisher} \year\uniq.
 
-collection=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+collection=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}.\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-conference=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. In:\begin{booktitle} \format[ToUpperCase]{\booktitle},\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address}\begin{year} \year\end{year}. Anais.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
+conference=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}.\end{author} \title. In: \begin{booktitle}{\booktitle},\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address}\begin{year} \year\end{year}. Anais.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
 
-default=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+default=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}.\end{author} \title.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-electronic=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. Available in <\url>. Accessed in \month, \year\uniq.\begin{howpublished} (\howpublished)\end{howpublished}
+electronic=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}.\end{author} \title. Available in <\url>. Accessed in \month, \year\uniq.\begin{howpublished} (\howpublished)\end{howpublished}
 
-inbook=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. In: \begin{editor}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}). \end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+inbook=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma), AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}.\end{author} \title. In: \begin{editor}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma)]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}). \end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-incollection=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title. In: \begin{editor}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}). \end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+incollection=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma)]{\author}.\end{author} \title. In: \begin{editor}\format[Authors(LastFirst,NoPunc,InitialsNospace,Comma,Comma)]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}). \end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-inproceedings=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author}  \title. In: \begin{booktitle}\format[ToUpperCase]{\booktitle},\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address} \year\uniq. Anais.\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
+inproceedings=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma)]{\author}.\end{author}  \title. In: \begin{booktitle}\booktitle\end{booktitle}; \begin{eventdate}\eventdate\end{eventdate}; \begin{location}\location\end{location}. \begin{address}\address\end{address}: \begin{publisher}\publisher\end{publisher}; \year\uniq. \begin{pages}p.\format[FormatPagesForHTML]{\pages}\end{pages}.
 
-manual=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+manual=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma)]{\author}.\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-mastersthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{address} \address,\end{address}\begin{school} \school,\end{school} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Master Thesis)
+mastersthesis=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace)]{\author}.\end{author} \title [Master Thesis]. \begin{address}\address\end{address}: \begin{school}\school\end{school}; \year\uniq.
 
-monograph=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{address} \address,\end{address}\begin{school} \school,\end{school} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Monograph)
+monograph=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace)]{\author}.\end{author} \title [Monograph]. \begin{address}\address\end{address}: \begin{school}\school\end{school}; \year\uniq.
 
-phdthesis=\begin{author}\format[Authors(LastFirst), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{address} \address,\end{address}\begin{school} \school,\end{school} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages} (Doctorate Thesis)
+phdthesis=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace)]{\author}.\end{author} \title [Doctorate Thesis]. \begin{address}\address\end{address}: \begin{school}\school\end{school}; \year\uniq.
 
-techreport=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+techreport=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma)]{\author}.\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-unpublished=\begin{author}\format[Authors(LastFirst, sep=; ), AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase]{\author}\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+unpublished=\begin{author}\format[Authors(LastFirst, NoPunc, InitialsNospace,Comma,Comma)]{\author}.\end{author} \title.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher} \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
