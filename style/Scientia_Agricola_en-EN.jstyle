@@ -1,0 +1,76 @@
+########################################################################################
+# Style file for JABREF-oo plugin -- provided 'as-is'
+# Alessandro Samuel-Rosa
+# This file is licensed under the terms of the GPL version 2
+########################################################################################
+
+NAME
+Scientia Agricola
+
+JOURNALS
+Scientia Agricola
+
+PROPERTIES
+Title="REFERENCES"
+IsSortByPosition="false"
+IsNumberEntries="false"
+ReferenceParagraphFormat="References"
+ReferenceHeaderParagraphFormat="Reference Head"
+
+CITATION
+AuthorField="author/editor"
+YearField="year"
+MaxAuthors="2"
+MaxAuthorsFirst="2"
+AuthorSeparator=", "
+AuthorLastSeparator=" and "
+AuthorLastSeparatorInText=" and "
+EtAlString=" et al."
+CitationSeparator="; "
+MultiCiteChronological="true"
+BracketBefore="("
+BracketAfter=")"
+BracketBeforeInList="["
+BracketAfterInList="]"
+MinimumGroupingCount="3"
+CitationCharacterFormat="Text body"
+GroupedNumbersSeparator="-"
+UniquefierSeparator=", "
+InTextYearSeparator=" "
+YearSeparator=", "
+FormatCitations="false"
+ItalicCitations="false"
+BoldCitations="false"
+SuperscriptCitations="false"
+SubscriptCitations="false"
+
+LAYOUT
+article=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon,Semicolon), FormatChars, RemoveBrackets]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. \format[FormatChars]{\journal}\begin{volume} \format[FormatPagesForHTML]{\volume}\end{volume}\begin{pages}: \format[FormatPagesForHTML]{\pages}.\end{pages}\begin{pubstate} (\format[RemoveBrackets]{\pubstate}).\end{pubstate}\begin{doi} doi:\doi\end{doi}\begin{url} URL:\url\end{url}
+
+book=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars, RemoveBrackets, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{edition} \begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.\begin{language} (in \format[RemoveBrackets]{\language})\end{language}
+
+collection=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.
+
+conference=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \format[FormatChars]{\title}. In: \begin{booktitle}{\booktitle},\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address}\begin{year} \year\end{year}. Anais.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
+
+default=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+
+electronic=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \format[FormatChars]{\title}. Available in <\url>. Accessed in \month, \year\uniq.\begin{howpublished} (\howpublished)\end{howpublished}
+
+inbook=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{pages} p. \format[FormatPagesForHTML]{\pages}.\end{pages} In: \begin{editor}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon)]{\editor}, \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.
+
+incollection=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{editor}\format[Authors(LastFirst,NoPunc,InitialsNospace,Semicolon, Semicolon)]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}). \end{editor}\begin{booktitle} \booktitle.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+
+inproceedings=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{booktitle}\booktitle\end{booktitle}; \begin{eventdate}\eventdate\end{eventdate}; \begin{location}\location\end{location}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}. \begin{pages}p.\format[FormatPagesForHTML]{\pages}\end{pages}.
+
+manual=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.
+
+mastersthesis=\begin{author}\format[Authors(LastFirst,InitialsNospace), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title} [Master Thesis]. \begin{address}\address\end{address}: \begin{school}\school\end{school}.
+
+monograph=\begin{author}\format[Authors(LastFirst,InitialsNospace), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title} [Monograph]. \begin{address}\address\end{address}: \begin{school}\school\end{school}.
+
+phdthesis=\begin{author}\format[Authors(LastFirst,InitialsNospace), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title} [Doctorate Thesis]. \begin{address}\address\end{address}: \begin{school}\school\end{school}.
+
+techreport=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+
+unpublished=\begin{author}\format[Authors(LastFirst,InitialsNospace,Semicolon, Semicolon), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
