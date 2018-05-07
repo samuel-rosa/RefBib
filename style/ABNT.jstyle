@@ -2,6 +2,10 @@
 # Style file for JABREF-oo plugin -- provided 'as-is'
 # Alessandro Samuel-Rosa
 # This file is licensed under the terms of the GPL version 2
+# NBR 6023: Informação e documentação - Referências - Elaboração
+# http://www.usjt.br/arq.urb/arquivos/abntnbr6023.pdf
+# NBR 10520: Informação e documentação - Citações em documentos - Apresentação
+# http://www.usjt.br/arq.urb/arquivos/nbr10520-original.pdf
 ########################################################################################
 
 NAME
@@ -33,44 +37,44 @@ BracketAfter=")"
 BracketBeforeInList="["
 BracketAfterInList="]"
 MinimumGroupingCount="3"
-CitationCharacterFormat="Default Style"
+CitationCharacterFormat="Capitals"
 GroupedNumbersSeparator="-"
 UniquefierSeparator=", "
 InTextYearSeparator=" "
 YearSeparator=", "
-FormatCitations="false"
+FormatCitations="true"
 ItalicCitations="false"
 BoldCitations="false"
 SuperscriptCitations="false"
 SubscriptCitations="false"
 
 LAYOUT
-article=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets]{\author}\end{author}. \format[FormatChars]{\title}. <b>\format[FormatChars]{\journal}</b>, \begin{volume}v. \format[FormatPagesForHTML]{\volume}\end{volume}, p. \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}, \year\uniq.
+article=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \format[FormatChars]{\title}. <i>\format[FormatChars]{\journal}</i>, \begin{volume}v. \format[FormatPagesForHTML]{\volume}\end{volume}, p. \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}, \year\uniq.
 
-book=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author}. <b>\format[FormatChars]{\title}</b>.\begin{edition} \begin{edition} \edition.ed.\end{edition}\begin{address} \address\end{address}:\begin{publisher} \publisher\end{publisher}, \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} p.\end{pages}
+book=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} <i>\format[FormatChars]{\title}</i>.\begin{edition} \begin{edition} \edition.ed.\end{edition}\begin{address} \address\end{address}:\begin{publisher} \publisher\end{publisher}, \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} p.\end{pages}
 
-collection=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <b>\format[FormatChars]{\title}</b>.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.
+collection=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. <i>\format[FormatChars]{\title}</i>.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.
 
-conference=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \format[FormatChars]{\title}. In: \begin{booktitle}{\booktitle},\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address}\begin{year} \year\end{year}. <b>Anais</b>.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
+conference=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \format[FormatChars]{\title}. In: \begin{booktitle}{\booktitle},\end{booktitle}\begin{edition} \edition},\end{edition}\begin{address} \address,\end{address}\begin{year} \year\end{year}. <i>Anais</i>.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address} \year\uniq.\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{howpublished} (\howpublished)\end{howpublished}
 
-default=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \year\uniq. <b>\format[FormatChars]{\title}</b>.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+default=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. <i>\format[FormatChars]{\title}</i>.\begin{publisher} \publisher,\end{publisher}\begin{address} \address\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-electronic=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author}. <b>\format[FormatChars]{\title}</b>. Disponível em: <\url>. Acesso em: \format[DateFormatter(dd/MM/yyyy)]{\date}.
+electronic=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} <i>\format[FormatChars]{\title}</i>. Disponível em: <\url>. Acesso em: \format[DateFormatter(dd/MM/yyyy)]{\date}.
 
-inbook=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations]{\author}\end{author} \format[FormatChars]{\title}. In: \begin{editor}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets]{\editor}\end{editor}\begin{booktitle} <b>\format[FormatChars, RemoveBrackets]{\booktitle}</b>.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \format[FormatChars, RemoveBrackets]{\address}\end{address}:\begin{publisher} \publisher\end{publisher}, \year\uniq.\begin{pages} p. \format[FormatPagesForHTML]{\pages}.\end{pages}
+inbook=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \format[FormatChars]{\title}. In: \begin{editor}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets, ToUpperCase, Replace("ET AL.,et al.")]{\editor}\end{editor}\begin{booktitle} <i>\format[FormatChars, RemoveBrackets]{\booktitle}</i>.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{address} \format[FormatChars, RemoveBrackets]{\address}\end{address}:\begin{publisher} \publisher\end{publisher}, \year\uniq.\begin{pages} p. \format[FormatPagesForHTML]{\pages}.\end{pages}
 
-incollection=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{editor}\format[Authors(LastFirst, NoPunc, InitialsNoSpace, Semicolon, Semicolon, 3)]{\editor}. \end{editor}\begin{booktitle} <b>\booktitle</b>.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+incollection=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{editor}\format[Authors(LastFirst, NoPunc, InitialsNoSpace, Semicolon, Semicolon, 3), ToUpperCase, Replace("ET AL.,et al.")]{\editor}. \end{editor}\begin{booktitle} <i>\booktitle</i>.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-inproceedings=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{booktitle}<b>\booktitle</b>\end{booktitle}; \begin{eventdate}\eventdate; \end{eventdate}\begin{location}\location\end{location}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.
+inproceedings=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{booktitle}<i>\booktitle</i>\end{booktitle}; \begin{eventdate}\eventdate; \end{eventdate}\begin{location}\location\end{location}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.
 
-manual=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars]{\author}\end{author} \year\uniq. \format[FormatChars]{<b>\title</b>}.\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.
+manual=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. <i>\format[FormatChars]{\title}</i>.\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.
 
-mastersthesis=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars]{\author}\end{author}. <b>\format[FormatChars]{\title}</b>. \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} f.\end{pages} \begin{degree}Dissertação (Mestrado em \degree) --\end{degree} \begin{school}\school\end{school}, \begin{address}\address\end{address}, \year\uniq.
+mastersthesis=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} <i>\format[FormatChars]{\title}</i>. \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} f.\end{pages} \begin{degree}Dissertação (Mestrado em \degree) --\end{degree} \begin{school}\school\end{school}, \begin{address}\address\end{address}, \year\uniq.
 
-monograph=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars]{\author}\end{author}. \year\uniq. \format[FormatChars]{<b>\title</b>} [Monograph]. \begin{address}\address\end{address}: \begin{school}\school\end{school}.
+monograph=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. \format[FormatChars]{<i>\title</i>} [Monograph]. \begin{address}\address\end{address}: \begin{school}\school\end{school}.
 
-phdthesis=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars]{\author}\end{author}. <b>\format[FormatChars]{\title}</b>. \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} f.\end{pages} \begin{degree}Tese (Doutorado em \degree) --\end{degree} \begin{school}\school\end{school}, \begin{address}\address\end{address}, \year\uniq.
+phdthesis=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} <i>\format[FormatChars]{\title}</i>. \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} f.\end{pages} \begin{degree}Tese (Doutorado em \degree) --\end{degree} \begin{school}\school\end{school}, \begin{address}\address\end{address}, \year\uniq.
 
-techreport=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars]{\author}\end{author}. \year\uniq. <b>\format[FormatChars]{\title}</b>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address:\end{address}\begin{publisher} \format[RemoveBrackets, FormatChars]{\publisher}\end{publisher}\begin{institution} \format[RemoveBrackets, FormatChars]{\institution}\end{institution}.\begin{pages} \format[FormatPagesForHTML]{\pages} p.\end{pages} Disponível em: <\url>. Acesso em: \format[DateFormatter(dd/MM/yyyy)]{\date}.
+techreport=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author}. \year\uniq. <i>\format[FormatChars]{\title}</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address:\end{address}\begin{publisher} \format[RemoveBrackets, FormatChars]{\publisher}\end{publisher}\begin{institution} \format[RemoveBrackets, FormatChars]{\institution}\end{institution}.\begin{pages} \format[FormatPagesForHTML]{\pages} p.\end{pages} Disponível em: <\url>. Acesso em: \format[DateFormatter(dd/MM/yyyy)]{\date}.
 
-unpublished=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars]{\author}\end{author}. \year\uniq. \format[FormatChars]{<b>\title</b>}.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
+unpublished=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. <i>\format[FormatChars]{\title}</i>.\begin{edition} \edition.ed.\end{edition}\begin{address} \address,\end{address}\begin{publisher} \publisher,\end{publisher}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
