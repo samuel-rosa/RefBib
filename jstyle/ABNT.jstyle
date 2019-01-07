@@ -37,7 +37,7 @@ BracketAfter=")"
 BracketBeforeInList="["
 BracketAfterInList="]"
 MinimumGroupingCount="3"
-CitationCharacterFormat="Capitals"
+CitationCharacterFormat="Default Style"
 GroupedNumbersSeparator="-"
 UniquefierSeparator=", "
 InTextYearSeparator=" "
@@ -65,9 +65,9 @@ inbook=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semi
 
 incollection=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{editor}\format[Authors(LastFirst, NoPunc, InitialsNoSpace, Semicolon, Semicolon, 3), ToUpperCase, Replace("ET AL.,et al.")]{\editor}. \end{editor}\begin{booktitle} <i>\booktitle</i>.\end{booktitle}\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.\begin{pages} \format[FormatPagesForHTML]{\pages}p.\end{pages}
 
-inproceedings=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{booktitle}<i>\booktitle</i>\end{booktitle}; \begin{eventdate}\eventdate; \end{eventdate}\begin{location}\location\end{location}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.
+inproceedings=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. \format[FormatChars]{\title}. In: \begin{booktitle}<i>\format[FormatChars]{\booktitle}</i>\end{booktitle}; \begin{eventdate}\eventdate; \end{eventdate}\begin{location}\location\end{location}.\begin{publisher} \publisher,\end{publisher}\begin{address} \address.\end{address}\begin{pages} p.\format[FormatPagesForHTML]{\pages}\end{pages}.
 
-manual=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} \year\uniq. <i>\format[FormatChars]{\title}</i>.\begin{edition} \edition.ed.\end{edition}\begin{publisher} \publisher,\end{publisher}\begin{address} \address,\end{address}.
+manual=\begin{author}\format[Authors(LastFirst, InitialsNoSpace, Semicolon, Semicolon, 3), FormatChars, RemoveBrackets, AuthorAndsReplacer, NoSpaceBetweenAbbreviations, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} <i>\format[FormatChars]{\title}</i>.\begin{edition} \begin{edition} \edition.ed.\end{edition}\begin{address} \address\end{address}:\begin{publisher} \publisher\end{publisher}, \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} p.\end{pages}
 
 mastersthesis=\begin{author}\format[Authors(LastFirst, InitialsNoSpace), FormatChars, ToUpperCase, Replace("ET AL.,et al.")]{\author}\end{author} <i>\format[FormatChars]{\title}</i>. \year\uniq.\begin{pages} \format[FormatPagesForHTML]{\pages} f.\end{pages} \begin{degree}Dissertação (Mestrado em \degree) --\end{degree} \begin{school}\school\end{school}, \begin{address}\address\end{address}, \year\uniq.
 
