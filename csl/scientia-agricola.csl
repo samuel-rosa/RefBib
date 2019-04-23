@@ -511,6 +511,7 @@ em caixa alta. Utiliza-se antes do nome da conferencia a expressao "In". Segundo
             <text macro="edition" suffix=". "/>		<!--Edição-->
             <text macro="publisher" suffix=". "/>	<!--Editora, local-->
             <text macro="access" suffix="."/>		<!--URL/DOI, data do acesso-->
+            <text variable="note" prefix=" "/>    <!--(in Portuguese) ou (in Spanish)-->
           </group>
         </else-if>
         
@@ -551,6 +552,7 @@ em caixa alta. Utiliza-se antes do nome da conferencia a expressao "In". Segundo
             <text macro="edition" suffix=", "/>			<!--Edicao-->
             <text macro="locators" suffix=". "/>		<!--Dados complementares "página, volume"-->
             <text macro="access" suffix="."/>			<!--URL, data do acesso-->
+            <text variable="note" prefix=" "/>    <!--(in Portuguese, with abstract in English)-->
           </group>
         </else-if>
         
@@ -571,8 +573,7 @@ em caixa alta. Utiliza-se antes do nome da conferencia a expressao "In". Segundo
           <group>
             <text macro="author" suffix=". "/>
             <!--Autor-->
-            <text macro="title" suffix=". "/>
-            <!--Titulo-->
+            <text macro="title" suffix=". "/><!--Titulo-->
             <text macro="edition" suffix=". "/>
             <!--Edicao-->
             <text macro="place" suffix=", "/>
@@ -606,6 +607,7 @@ em caixa alta. Utiliza-se antes do nome da conferencia a expressao "In". Segundo
             <text macro="title" suffix=". "/>		<!--Título-->
             <text macro="publisher" suffix=". "/>	<!--Editora, local-->
             <text macro="access" suffix="."/>		<!--URL/DOI, data do acesso-->
+            <text variable="note" prefix=" "/>    <!--(in Portuguese) ou (in Spanish)-->
           </group>
         </else-if>
         
@@ -668,24 +670,18 @@ em caixa alta. Utiliza-se antes do nome da conferencia a expressao "In". Segundo
           <text macro="author" suffix=". "/>			<!--Autor-->
           <text macro="issued-year" suffix=". "/>		<!--Ano-->
           <text macro="title" suffix=". "/>			<!--Título-->
-          <text macro="container-contributors"/>
-          <!--Nomes de editore-->
+          <text macro="container-contributors"/><!--Nomes de editore-->
           <text macro="secondary-contributors"/>
-          <text macro="container-title"/>
-          <!--Titulo da publicacao-->
+          <text macro="container-title"/><!--Titulo da publicacao-->
           <text variable="collection-title" prefix=": " suffix="."/>
-          <text macro="locators"/>
-          <!--Dados complementares "pagina, volume"-->
+          <text macro="locators"/><!--Dados complementares "pagina, volume"-->
           <group delimiter=". " prefix=". " suffix=". ">
-            <text macro="event"/>
-            <!--Nome do evento, conferencia-->
+            <text macro="event"/> <!--Nome do evento, conferencia-->
           </group>
-          <text variable="publisher-place"/>
-          <!--Local-->
-          <text variable="publisher" suffix=", "/>
-          <!--Editor-->
-          <text macro="access"/>
-          <!--URL, data do acesso-->
+          <text variable="publisher-place"/> <!--Local-->
+          <text variable="publisher" suffix=", "/> <!--Editor-->
+          <text macro="access"/> <!--URL, data do acesso-->
+          <text variable="note" prefix=" "/>    <!--(in Portuguese) ou (in Spanish)-->
         </else>
       </choose>
     </layout>
